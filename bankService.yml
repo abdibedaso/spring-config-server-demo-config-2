@@ -9,3 +9,8 @@ spring:
       discovery:
         locator:
           enabled: true
+          
+
+activemq:
+  broker:
+    url: tcp://localhost:61616

@@ -1,0 +1,11 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: bankService
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true

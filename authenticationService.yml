@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8082
 
 spring:
   application:
@@ -11,7 +11,7 @@ spring:
           enabled: true
 
   datasource:
-    url: jdbc:mysql://localhost:3306/account-microservice
+    url: jdbc:mysql://localhost:3306/authentication-microservice
     username: root
     password: P@ss4%mysql%
     driverClassName: com.mysql.cj.jdbc.Driver

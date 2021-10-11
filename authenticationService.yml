@@ -25,3 +25,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+zuul:
+  routes:
+    productService:
+      url: http://localhost:8082
+ribbon:
+  eureka:
+    enabled: true

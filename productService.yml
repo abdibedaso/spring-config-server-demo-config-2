@@ -11,7 +11,7 @@ spring:
           enabled: true
 
   datasource:
-    url: jdbc:mysql://172.19.160.1:3306/product-microservice
+    url: jdbc:mysql://172.19.141.91:3306/product-microservice
     username: root
     password: P@ss4%mysql%
     driverClassName: com.mysql.cj.jdbc.Driver
@@ -30,6 +30,6 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://172.19.160.1:8761/eureka}
+      defaultZone: ${EUREKA_URI:http://172.19.141.91:8761/eureka}
   instance:
     preferIpAddress: true

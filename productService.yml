@@ -25,3 +25,11 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+        
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://172.19.160.1:8761/eureka}
+  instance:
+    preferIpAddress: true

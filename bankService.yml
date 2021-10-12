@@ -13,11 +13,5 @@ spring:
 
 activemq:
   broker:
-    url: tcp://172.19.160.1:61616
-    
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://172.19.141.91:8761/eureka}
-  instance:
-    preferIpAddress: true
+    url: tcp://172.19.141.91:61616
+   

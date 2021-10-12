@@ -11,7 +11,7 @@ spring:
           enabled: true
 
   datasource:
-    url: jdbc:mysql://172.19.160.1:3306/account-microservice
+    url: jdbc:mysql://172.19.141.91:3306/account-microservice
     username: root
     password: P@ss4%mysql%
     driverClassName: com.mysql.cj.jdbc.Driver
@@ -28,13 +28,13 @@ spring:
 zuul:
   routes:
     product:
-      url: http://172.19.160.1:8082
+      url: http://172.19.141.91:8082
     order:
-      url: http://172.19.160.1:8084
+      url: http://172.19.141.91:8084
     payPal:
-      url: http://172.19.160.1:8091
+      url: http://172.19.141.91:8091
     bank:
-      url: http://172.19.160.1:8092
+      url: http://172.19.141.91:8092
 ribbon:
   eureka:
     enabled: true
@@ -42,6 +42,6 @@ ribbon:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://172.19.160.1:8761/eureka}
+      defaultZone: ${EUREKA_URI:http://172.19.141.91:8761/eureka}
   instance:
     preferIpAddress: true

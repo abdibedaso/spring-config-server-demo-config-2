@@ -38,3 +38,10 @@ zuul:
 ribbon:
   eureka:
     enabled: true
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://172.19.160.1:8761/eureka}
+  instance:
+    preferIpAddress: true

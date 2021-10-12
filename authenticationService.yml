@@ -39,9 +39,12 @@ ribbon:
   eureka:
     enabled: true
     
+
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://172.19.141.91:8761/eureka}
   instance:
-    preferIpAddress: true
+    hostname: authenticationService
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://172.19.141.91:8761/eureka

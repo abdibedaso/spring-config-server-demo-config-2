@@ -28,13 +28,13 @@ spring:
 zuul:
   routes:
     product:
-      url: http://localhost:8082
+      url: http://172.19.160.1:8082
     order:
-      url: http://localhost:8084
+      url: http://172.19.160.1:8084
     payPal:
-      url: http://localhost:8091
+      url: http://172.19.160.1:8091
     bank:
-      url: http://localhost:8092
+      url: http://172.19.160.1:8092
 ribbon:
   eureka:
     enabled: true

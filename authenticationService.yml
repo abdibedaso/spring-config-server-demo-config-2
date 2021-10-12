@@ -11,9 +11,9 @@ spring:
           enabled: true
 
   datasource:
-    url: jdbc:mysql://172.19.141.91:3306/account-microservice
+    url: jdbc:mysql://mysql-0.mysql.default.svc.cluster.local:3306/account-microservice
     username: root
-    password: P@ss4%mysql%
+    password: password
     driverClassName: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: false

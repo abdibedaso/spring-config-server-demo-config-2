@@ -28,7 +28,7 @@ spring:
 zuul:
   routes:
     product:
-      url: http://172.19.141.91:8082
+      url: http://product-service:8082
     order:
       url: http://172.19.141.91:8084
     payPal:

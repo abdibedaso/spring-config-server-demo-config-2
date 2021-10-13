@@ -11,7 +11,7 @@ spring:
           enabled: true
 
   datasource:
-    url: jdbc:mysql://mysql:3306/account-microservice?createDatabaseIfNotExist=true&useSSL=false
+    url: jdbc:mysql://mysql:3306/account-microservice?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
     username: root
     password: password
     driverClassName: com.mysql.cj.jdbc.Driver

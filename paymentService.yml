@@ -11,7 +11,7 @@ spring:
           enabled: true
 
   datasource:
-    url: jdbc:mysql://172.19.141.91:3306/payment-microservice
+    url: jdbc:mysql://mysql:3306/payment-microservice?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
     username: root
     password: P@ss4%mysql%
     driverClassName: com.mysql.cj.jdbc.Driver
@@ -31,4 +31,4 @@ spring:
 
 activemq:
   broker:
-    url: tcp://172.19.141.91:61616
+    url: tcp://activemq-service:61616

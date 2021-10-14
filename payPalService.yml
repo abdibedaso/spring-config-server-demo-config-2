@@ -13,5 +13,5 @@ spring:
 
 activemq:
   broker:
-    url: tcp://172.19.141.91:61616
+    url: tcp://activemq-service:61616
    

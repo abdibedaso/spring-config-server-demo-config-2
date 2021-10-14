@@ -30,11 +30,11 @@ zuul:
     product:
       url: http://product-service:8082
     order:
-      url: http://172.19.141.91:8084
+      url: http://order-service:8084
     payPal:
-      url: http://172.19.141.91:8091
+      url: http://paypal-service:8091
     bank:
-      url: http://172.19.141.91:8092
+      url: http://bank-service:8092
 ribbon:
   eureka:
     enabled: true

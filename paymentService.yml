@@ -13,7 +13,7 @@ spring:
   datasource:
     url: jdbc:mysql://mysql:3306/payment-microservice?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
     username: root
-    password: P@ss4%mysql%
+    password: password
     driverClassName: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: false
